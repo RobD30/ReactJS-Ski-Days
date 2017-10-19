@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/RobD30/ReactJS-Essentials/issues"
   },
-  "homepage": "https://github.com/RobD30/ReactJS-Essentials#readme"
+  "homepage": "https://github.com/RobD30/ReactJS-Essentials#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0"
+  }
 }
