@@ -1,3 +1,3 @@
-# ReactJS Essentials from Lynda
-
-A bit of a deeper dive into ReactJS
+React Router Demo
+=====================
+A React Router project for routing members.
