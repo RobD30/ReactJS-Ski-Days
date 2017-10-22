@@ -4,7 +4,9 @@ import Calendar from 'react-icons/lib/fa/calendar'
 import {SkiDayRow} from './SkiDayRow'
 import {PropTypes} from 'react'
 
-export const SkiDayList = ({days}) => (
+export const SkiDayList = ({ 	days}) =>
+	return (
+	    <div className='ski-day-list'>
 	<table>
 		<thead>
 			<tr>
@@ -22,6 +24,7 @@ export const SkiDayList = ({days}) => (
 		</tbody>
 
 	</table>
+    </div>
 );
 
 SkiDayList.propTypes = {
