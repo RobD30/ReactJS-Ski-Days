@@ -11,7 +11,7 @@ export const SkiDayList = ({days, filter}) => {
   		days:
   		days.filter(day => day[filter]);
   return (
-  	<div className="ski-day-list">
+  	<div className='ski-day-list'>
 	<table>
 		<thead>
 			<tr>
