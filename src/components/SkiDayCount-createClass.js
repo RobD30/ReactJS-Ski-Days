@@ -5,7 +5,7 @@ import SnowFlake from 'react-icons/lib/ti/weather-snow'
 import Calendar from 'react-icons/lib/fa/calendar'
 
 export const SkiDayCount = createClass({
-    getDefautlProps() {
+    getDefaultProps() {
       return {
           total: 50,
           powder: 50,
