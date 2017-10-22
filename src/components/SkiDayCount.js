@@ -4,7 +4,6 @@ import SnowFlake from 'react-icons/lib/ti/weather-snow'
 import Calendar from 'react-icons/lib/fa/calendar'
 import {PropTypes} from 'react'
 
-
 const percentToDecimal = (decimal) => {
 	return ((decimal * 100) + '%')
 };
@@ -40,10 +39,11 @@ export const SkiDayCount = ({total=70, powder=20,
 				</span>
 			</div>
 		</div>
-);
+),
 
 SkiDayCount.propTypes = {
-    total: PropTypes.number,
-    powder: PropTypes.number,
-    backcountry: PropTypes.number
+  total: PropTypes.number,
+  powder: PropTypes.number,
+  backcountry: PropTypes.number,
+  goal: PropTypes.number
 };
