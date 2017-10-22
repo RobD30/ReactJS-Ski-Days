@@ -39,7 +39,7 @@ export const SkiDayCount = ({total=70, powder=20,
 				</span>
 			</div>
 		</div>
-),
+);
 
 SkiDayCount.propTypes = {
   total: PropTypes.number,
