@@ -1,8 +1,8 @@
-import { Component } from 'react'
-import { SkiDayList } from './SkiDayList'
-import { SkiDayCount } from './SkiDayCount'
-import { AddDayForm } from './AddDayForm'
-import { Menu } from './Menu'
+import {Component} from 'react'
+import {SkiDayList} from './SkiDayList'
+import {SkiDayCount} from './SkiDayCount'
+import {AddDayForm} from './AddDayForm'
+import {Menu} from './Menu'
 
 export class App extends Component {
 	constructor(props) {
@@ -10,20 +10,20 @@ export class App extends Component {
 		this.state = {
 			allSkiDays: [
 			{
-				resort: "Squaw Valley",
-				date: new Date("1/2/2016"),
+				resort: 'Squaw Valley',
+				date: new Date('1/2/2016'),
 				powder: true,
 				backcountry: false
 			},
 			{
-				resort: "Kirkwood",
-				date: new Date("3/28/2016"),
+				resort: 'Kirkwood',
+				date: new Date('3/28/2016'),
 				powder: false,
 				backcountry: false
 			},
 			{
-				resort: "Mt. Tallac",
-				date: new Date("4/2/2016"),
+				resort: 'Mt. Tallac',
+				date: new Date('4/2/2016'),
 				powder: false,
 				backcountry: true
 			}
@@ -37,17 +37,17 @@ export class App extends Component {
 	}
 	render() {
 		return (
-			<div className="app">
+			<div className='app'>
 			<Menu />
-			{(this.props.location.pathname === "/") ?
+			{(this.props.location.pathname === '/') ?
 			  <SkiDayCount total={this.countDays()}
 							 powder={this.countDays(
-							 		"powder"
+							 		'powder'
 							 	)}
 							 backcountry={this.countDays(
-							 		"backcountry"
+							 		'backcountry'
 							 	)}/> :
-			 (this.props.location.pathname === "/add-day") ?
+			 (this.props.location.pathname === '/add-day') ?
 			 	<AddDayForm /> :
 			 	<SkiDayList days={this.state.allSkiDays}
 			 				filter={this.props.params.filter}/>				 
